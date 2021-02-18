@@ -1,12 +1,13 @@
 import React from 'react';
 import * as S from './MyWork.Elements';
-import { projectTwo as data } from '../../../Data/InitialData';
 
-const MyWorkCard = () => {
+const MyWorkCard = ({ data }) => {
 	return (
 		<S.Card>
 			<S.LeftWrapper>
-				<S.Image src={data.image} />
+				{data.image.map((item) => (
+					<S.Image key={item} src={item} />
+				))}
 				<S.LinksWrapper>
 					<S.HerokuLink href={data.heroku} target='_blank'>
 						<S.HerokuIcon />

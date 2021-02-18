@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
-import {
-	Nav,
-	NavBarContainer,
-	NavLogo,
-	MobileIcon,
-	NavMenu,
-	NavItem,
-	NavLinks,
-} from './NavBar.Elements';
+import * as S from './NavBar.Elements';
 
 const NavBar = ({ toggle, visible }) => {
 	const [scrollNav, setScrollNav] = useState(false);
@@ -32,15 +24,15 @@ const NavBar = ({ toggle, visible }) => {
 
 	return (
 		<>
-			<Nav scrollNav={scrollNav}>
-				<NavBarContainer>
-					<NavLogo onClick={toggleHome}>Portfolio</NavLogo>
-					<MobileIcon onClick={toggle}>
+			<S.Nav scrollNav={scrollNav}>
+				<S.NavBarContainer>
+					<S.NavLogo onClick={toggleHome}>Portfolio</S.NavLogo>
+					<S.MobileIcon onClick={toggle}>
 						<FaBars />
-					</MobileIcon>
-					<NavMenu visible={visible}>
-						<NavItem>
-							<NavLinks
+					</S.MobileIcon>
+					<S.NavMenu visible={visible}>
+						<S.NavItem>
+							<S.NavLinks
 								to='who_am_I'
 								smooth={true}
 								duration={500}
@@ -49,10 +41,10 @@ const NavBar = ({ toggle, visible }) => {
 								offset={-80}
 							>
 								who am i
-							</NavLinks>
-						</NavItem>
-						<NavItem>
-							<NavLinks
+							</S.NavLinks>
+						</S.NavItem>
+						<S.NavItem>
+							<S.NavLinks
 								to='my_skills'
 								smooth={true}
 								duration={500}
@@ -61,10 +53,10 @@ const NavBar = ({ toggle, visible }) => {
 								offset={-80}
 							>
 								my skills
-							</NavLinks>
-						</NavItem>
-						<NavItem>
-							<NavLinks
+							</S.NavLinks>
+						</S.NavItem>
+						<S.NavItem>
+							<S.NavLinks
 								to='my_work'
 								smooth={true}
 								duration={500}
@@ -73,10 +65,10 @@ const NavBar = ({ toggle, visible }) => {
 								offset={-80}
 							>
 								my work
-							</NavLinks>
-						</NavItem>
-						<NavItem>
-							<NavLinks
+							</S.NavLinks>
+						</S.NavItem>
+						<S.NavItem>
+							<S.NavLinks
 								to='contact'
 								smooth={true}
 								duration={500}
@@ -85,11 +77,11 @@ const NavBar = ({ toggle, visible }) => {
 								offset={-80}
 							>
 								contact
-							</NavLinks>
-						</NavItem>
-					</NavMenu>
-				</NavBarContainer>
-			</Nav>
+							</S.NavLinks>
+						</S.NavItem>
+					</S.NavMenu>
+				</S.NavBarContainer>
+			</S.Nav>
 		</>
 	);
 };

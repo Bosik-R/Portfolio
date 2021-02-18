@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SkillsContainer = styled.div`
+export const Container = styled.div`
 	min-height: 860px;
 	display: flex;
 	flex-direction: column;
@@ -10,7 +10,7 @@ export const SkillsContainer = styled.div`
 	position: relative;
 `;
 
-export const SkillsTitle = styled.h1`
+export const Title = styled.h1`
 	font-size: 40px;
 	color: #fff;
 	margin-bottom: 60px;
@@ -20,7 +20,7 @@ export const SkillsTitle = styled.h1`
 	}
 `;
 
-export const SkillsWrapper = styled.div`
+export const Wrapper = styled.div`
 	max-width: 1000px;
 	width: 100%;
 	display: flex;
@@ -29,7 +29,7 @@ export const SkillsWrapper = styled.div`
 	align-items: flex-start;
 `;
 
-export const SkillsOverlay = styled.div`
+export const Overlay = styled.div`
 	position: absolute;
 	top: 0;
 	right: 0;

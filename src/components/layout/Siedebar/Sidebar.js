@@ -1,30 +1,30 @@
-
 import React from 'react';
-import { 
-  SidebarContainer, 
-  Icon, 
-  CloseIcon, 
-  SidebarWrapper, 
-  SidebarMenu, 
-  SidebarLink,
-} from './Sidebar.Elements';
+import * as S from './Sidebar.Elements';
 
 const Sidebar = ({ isOpen, toggle }) => {
-  return (
-    <SidebarContainer isOpen={isOpen}>
-      <Icon>
-        <CloseIcon onClick={toggle} />
-      </Icon>
-      <SidebarWrapper>
-        <SidebarMenu>
-          <SidebarLink to='about' onClick={toggle} >About</SidebarLink>
-          <SidebarLink to='services' onClick={toggle} >Services</SidebarLink>
-          <SidebarLink to='discovery' onClick={toggle} >Discovery</SidebarLink>
-          <SidebarLink to='signup' onClick={toggle} >Sign Up</SidebarLink>
-        </SidebarMenu>
-      </SidebarWrapper>
-    </SidebarContainer>
-  )
-}
+	return (
+		<S.Container isOpen={isOpen}>
+			<S.Icon>
+				<S.CloseIcon onClick={toggle} />
+			</S.Icon>
+			<S.Wrapper>
+				<S.Menu>
+					<S.Link to='who_am_I' onClick={toggle}>
+						who am I
+					</S.Link>
+					<S.Link to='my_skills' onClick={toggle}>
+						my skills
+					</S.Link>
+					<S.Link to='my_work' onClick={toggle}>
+						my work
+					</S.Link>
+					<S.Link to='contact' onClick={toggle}>
+						contact
+					</S.Link>
+				</S.Menu>
+			</S.Wrapper>
+		</S.Container>
+	);
+};
 
 export default Sidebar;

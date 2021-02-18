@@ -1,21 +1,6 @@
 import React, { useState } from 'react';
 import Video from '../../../videos/video.mp4';
-import {
-	HeroContainer,
-	HeroBg,
-	VideoBg,
-	HeroContent,
-	HeroTitle,
-	HeroParagraph,
-	HeroSpan,
-	HeroBtnWrapper,
-	HeroButton,
-	EyeVisible,
-	IcomVisibleWrapper,
-	EyeHiden,
-	IconHidenWrapper,
-	HeroBtnContent,
-} from './Hero.Elements';
+import * as S from './Hero.Elements';
 
 const Hero = ({ visible }) => {
 	const [isHover, setIsHover] = useState(false);
@@ -31,18 +16,18 @@ const Hero = ({ visible }) => {
 	};
 
 	return (
-		<HeroContainer>
-			<HeroBg>
-				<VideoBg autoPlay loop muted src={Video} type='video/mp4' />
-			</HeroBg>
-			<HeroContent>
-				<HeroTitle>Hi. I'm Tomasz Rosik</HeroTitle>
-				<HeroParagraph>
+		<S.Container>
+			<S.HeroBg>
+				<S.VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+			</S.HeroBg>
+			<S.Content>
+				<S.Title>Hi. I'm Tomasz Rosik</S.Title>
+				<S.Paragraph>
 					welcome to my
-					<HeroSpan>portfolio website</HeroSpan>
-				</HeroParagraph>
-				<HeroBtnWrapper>
-					<HeroButton
+					<S.Span>portfolio website</S.Span>
+				</S.Paragraph>
+				<S.BtnWrapper>
+					<S.Button
 						to='contact'
 						onClick={() => hideButton()}
 						hiden={hiden}
@@ -50,17 +35,17 @@ const Hero = ({ visible }) => {
 						onMouseEnter={() => onHover()}
 						onMouseLeave={() => onHover()}
 					>
-						<HeroBtnContent isHover={isHover}>take a look</HeroBtnContent>
-						<IconHidenWrapper isHover={isHover}>
-							<EyeHiden />
-						</IconHidenWrapper>
-						<IcomVisibleWrapper isHover={isHover}>
-							<EyeVisible />
-						</IcomVisibleWrapper>
-					</HeroButton>
-				</HeroBtnWrapper>
-			</HeroContent>
-		</HeroContainer>
+						<S.BtnContent isHover={isHover}>take a look</S.BtnContent>
+						<S.IconHidenWrapper isHover={isHover}>
+							<S.EyeHiden />
+						</S.IconHidenWrapper>
+						<S.IconVisibleWrapper isHover={isHover}>
+							<S.EyeVisible />
+						</S.IconVisibleWrapper>
+					</S.Button>
+				</S.BtnWrapper>
+			</S.Content>
+		</S.Container>
 	);
 };
 

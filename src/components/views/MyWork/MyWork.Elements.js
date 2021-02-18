@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const Title = styled.h1`
 	font-size: 40px;
 	color: #010606;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 	margin-top: 30px;
 
 	@media (max-width: 480px) {
@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 `;
 
 export const Card = styled.div`
