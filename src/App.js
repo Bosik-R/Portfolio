@@ -1,13 +1,12 @@
 import './App.css';
-import Home from './pages/Home';
-import { BrowserRouter } from 'react-router-dom';
+import MainLayout from './components/layout/MainLayout/MainLayout';
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Home />
-    </BrowserRouter>
-  );
+	return (
+		<>
+			<MainLayout />
+		</>
+	);
 }
 
 export default App;
