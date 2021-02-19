@@ -1,5 +1,5 @@
-import React from 'react';
-import * as S from './MyWork.Elements';
+import React from 'react'
+import * as S from './MyWork.Elements'
 
 const MyWorkCard = ({ data, toggle }) => {
 	return (
@@ -20,14 +20,13 @@ const MyWorkCard = ({ data, toggle }) => {
 			<S.RightWrapper>
 				<S.Content>
 					<S.ContentTitle>{data.title}</S.ContentTitle>
-					<S.Paragraph>{data.p1}</S.Paragraph>
-					{data.p2 && <S.Paragraph>{data.p2}</S.Paragraph>}
-					{data.p3 && <S.Paragraph>{data.p3}</S.Paragraph>}
-					{data.p4 && <S.Paragraph>{data.p4}</S.Paragraph>}
+					{data.paragraph.map((p) => (
+						<S.Paragraph>{p}</S.Paragraph>
+					))}
 				</S.Content>
 			</S.RightWrapper>
 		</S.Card>
-	);
-};
+	)
+}
 
-export default MyWorkCard;
+export default MyWorkCard
