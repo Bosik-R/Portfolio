@@ -1,12 +1,12 @@
 import React from 'react';
 import * as S from './MyWork.Elements';
 
-const MyWorkCard = ({ data }) => {
+const MyWorkCard = ({ data, toggle }) => {
 	return (
 		<S.Card>
 			<S.LeftWrapper>
 				{data.image.map((item) => (
-					<S.Image key={item} src={item} />
+					<S.Image key={item} src={item} onClick={() => toggle(item)} />
 				))}
 				<S.LinksWrapper>
 					<S.HerokuLink href={data.heroku} target='_blank'>

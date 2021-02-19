@@ -1,57 +1,31 @@
-import React from 'react'
-import { Button } from '../../common/Button/Button.Elements';
-import {
-  AboutMeContainer,
-  AboutMeWrapper,
-  AboutMeRow,
-  Column1,
-  Column2,
-  TextWrapper,
-  TopLine,
-  Heading,
-  Subtitle,
-  BtnWrapper,
-  ImgWrapper,
-  Img,
-} from './AboutMe.Elements';
+import React from 'react';
+import * as S from './AboutMe.Elements';
+import svg from '../../../images/profile.svg';
+import { aboutMe as data } from '../../../Data/InitialData';
 
-const AboutMe = ({ id, darkBg, lightText, topLine, headline, description, buttonLabel, imgStart, img, alt, primary, dark}) => {
-  return (
-    <>
-      <AboutMeContainer darkBg={darkBg} id={id}>
-        <AboutMeWrapper>
-          <AboutMeRow imgStart={imgStart}>
-            <Column1>
-              <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle lightText={lightText}>{description}</Subtitle>
-                <BtnWrapper>
-                  <Button 
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                    primary={primary} 
-                    dark={dark} 
-                    to='home'
-                  >
-                    {buttonLabel}
-                  </Button>
-                </BtnWrapper>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <ImgWrapper>
-                <Img src={img} alt={alt} />
-              </ImgWrapper>
-            </Column2>
-          </AboutMeRow>
-        </AboutMeWrapper>
-      </AboutMeContainer>
-    </>
-  )
-}
+const AboutMe = () => {
+	return (
+		<>
+			<S.Container>
+				<S.Title id='who_am_I'>who am I</S.Title>
+				<S.Wrapper>
+					<S.LeftColumn>
+						<S.Subtitle>{data.title}</S.Subtitle>
+						<S.Paragraph>{data.p1}</S.Paragraph>
+						<S.Paragraph>{data.p2}</S.Paragraph>
+						<S.Paragraph>{data.p3}</S.Paragraph>
+						<S.Paragraph>{data.p4}</S.Paragraph>
+					</S.LeftColumn>
+					<S.RightColumn>
+						<S.ImageWrapper>
+							<S.Svg src={svg} />
+							<S.Image src={data.image} />
+						</S.ImageWrapper>
+					</S.RightColumn>
+				</S.Wrapper>
+			</S.Container>
+		</>
+	);
+};
 
 export default AboutMe;

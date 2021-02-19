@@ -34,9 +34,9 @@ export const projectTwo = {
 	image: ['/images/madzita.jpg'],
 	heroku: 'https://madzita.herokuapp.com/',
 	git: 'https://github.com/Bosik-R/final__project',
-	title: 'Simple online-shop',
+	title: 'Online-shop',
 	p1:
-		'Build alone from the scrach a react online shop. This was a final project in the Web Developer bootcamp at "KODILLA".',
+		'Build alone from scrach, a react based online shop. This was a final project in the Web Developer bootcamp at "KODILLA".',
 	p2:
 		'In the shop you are routed throu diferent sub-pages. The dataBase is located on MongoDB cloud. The backend server response to get, getById and post requests. After sending order you get a response from server with your full order. I used brouser local storage to save cart content',
 	p3:
@@ -55,4 +55,17 @@ export const projectOne = {
 		'It was my first react page using "styled components" that i kind of fall in love with. Its great how you kan handle syles thru props and states. I refactored it to my Portfolio page. I based it on function components wome times "stateless components" and react scrool that provides smoot scrool.',
 	p3: 'technologies used: react, styled components, react scrool',
 	p4: 'In the future, export dataBase to mongoDB cloud, add new content',
+};
+
+export const aboutMe = {
+	image: '/images/tom.jpg',
+	title:
+		'Hi !  Im Tom a bootcamp went through, self-learned Junior Web Developer.',
+	p1:
+		'My jurney with programing started 10 years ago with building and deploying a HTML web page that i made for a frend.Back then i didnt have the curage to fallou that path. And so was it until last year as i discovered that you dont need a colage degree to be a web developer ???? and didnt procied to be one, but I was ready to try it.',
+	p2: 'On March I started a Web Developer bootcamp at KODILLA.',
+	p3:
+		'Since then i finish the bootcamp, where I worked on 2 projects build by my self and a 3 weeks teamwork simulation throu "Jira" working on a project with daylys, code reviw and weekly meetings.',
+	p4:
+		'Besides bootcamp I was learning by my self throu couple of courses and tuturials on youTube. So thats my a ambitus, self motivated, eager to lern person',
 };

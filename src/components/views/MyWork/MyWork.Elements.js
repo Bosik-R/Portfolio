@@ -8,6 +8,7 @@ export const Container = styled.div`
 	align-items: center;
 	flex-direction: column;
 	background-color: #fff;
+	position: relative;
 `;
 
 export const Title = styled.h1`
@@ -38,19 +39,19 @@ export const Card = styled.div`
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-wrap: nowrap;
-	background-color: #010606;
+	background-color: #fff;
+	border: 3px solid #010606;
 	border-radius: 10px;
+	box-shadow: 7px 12px 15px 5px #555555;
 
 	@media (max-width: 767px) {
 		flex-direction: column;
 		align-items: center;
-		//margin: 20px 5px;
 	}
 `;
 
 export const LeftWrapper = styled.div`
 	width: 38%;
-	//width: 100%;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -71,6 +72,8 @@ export const Image = styled.img`
 	object-fit: fill;
 	margin-bottom: 10px;
 	border-radius: 10px;
+	border: 1px solid #010606;
+	cursor: pointer;
 
 	@media (max-width: 767px) {
 		max-width: 350px;
@@ -103,7 +106,7 @@ export const GitLink = styled.a``;
 export const GitIcon = styled(SiGithub)`
 	width: 35px;
 	height: 35px;
-	color: #fff;
+	color: #010606;
 	margin: 10px;
 
 	&:hover {
@@ -117,9 +120,7 @@ export const RightWrapper = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	color: #fff;
 	padding: 10px 15px;
-	//margin-left: 10px;
 
 	@media (max-width: 767px) {
 		width: 98%;
@@ -150,4 +151,21 @@ export const Paragraph = styled.p`
 	text-align: justify;
 	text-justify: inter-word;
 	border-bottom: 1px dotted hsl(218, 17%, 62%);
+`;
+
+export const Overlay = styled.div`
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: grid;
+	place-content: center;
+	background-color: rgba(0, 0, 0, 0.86);
+`;
+
+export const OverlayItem = styled.img`
+	height: 100vh;
+	width: auto;
+	z-index: 10;
 `;

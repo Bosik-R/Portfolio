@@ -5,6 +5,7 @@ import Hero from '../../views/Hero/Hero';
 import Skills from '../../views/Skills/Skills';
 import MyWork from '../../views/MyWork/MyWork';
 import Contact from '../../views/Contact/Contact';
+import AboutMe from '../../views/AboutMe/AboutMe';
 
 const MainLayout = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,7 @@ const MainLayout = () => {
 			<Hero visible={makeVisible} />
 			{visible ? (
 				<>
+					<AboutMe />
 					<Skills />
 					<MyWork />
 					<Contact />
