@@ -55,7 +55,7 @@ export const myWork = [
 			`In the future: export initialData to mongoDB cloud, add new content.`,
 		],
 		image: ['/images/portfolio-1.jpg', '/images/portfolio-2.jpg'],
-		git: 'https://github.com/Bosik-R/react-styled-components',
+		git: 'https://github.com/Bosik-R/Portfolio',
 	},
 	{
 		title: 'Online-shop',
