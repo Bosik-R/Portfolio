@@ -35,7 +35,7 @@ const Hero = ({ visible }) => {
 						onMouseEnter={() => onHover()}
 						onMouseLeave={() => onHover()}
 					>
-						<S.BtnContent isHover={isHover}>take a look</S.BtnContent>
+						<S.BtnContent isHover={isHover}>have a look</S.BtnContent>
 						<S.IconHidenWrapper isHover={isHover}>
 							<S.EyeHiden />
 						</S.IconHidenWrapper>

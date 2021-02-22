@@ -40,6 +40,7 @@ export const LeftColumn = styled.div`
 
 export const Subtitle = styled.h2`
 	font-weight: bold;
+	text-indent: 30px;
 	font-size: 30px;
 	margin-bottom: 50px;
 `;
@@ -66,28 +67,25 @@ export const ImageWrapper = styled.div`
 	height: auto;
 	display: flex;
 	position: relative;
+	@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
 	&::before {
 		content: 'Tomasz';
 		position: absolute;
-		color: #01bf71;
-		bottom: -17px;
-		left: -4px;
-		font-size: 40px;
-		font-weight: bold;
-		font-family: 'Encode Sans Expanded', sans-serif;
+		bottom: -52px;
+		left: 15px;
+		font-size: 60px;
+		font-family: 'Cookie', cursive;
 		transform: rotate(16deg);
 	}
 	&::after {
 		content: 'Rosik';
 		position: absolute;
-		color: #01bf71;
-		bottom: -40px;
-		right: 25px;
-		font-size: 40px;
-		font-weight: bold;
-		font-family: 'Encode Sans Expanded', sans-serif;
-		transform: rotate(-30deg);
+		bottom: -50px;
+		right: 40px;
+		font-size: 60px;
+		font-family: 'Cookie', cursive;
+		transform: rotate(-25deg);
 	}
 `;
 export const Svg = styled.img`
@@ -96,8 +94,8 @@ export const Svg = styled.img`
 export const Image = styled.img`
 	position: absolute;
 	top: 77px;
-	left: 93px;
-	width: 113px;
+	left: 77px;
+	width: 142px;
 	height: 153px;
 	border-radius: 50%;
 `;

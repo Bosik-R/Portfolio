@@ -9,9 +9,10 @@ const MyWorkCard = ({ data, toggle }) => {
 					<S.Image key={item} src={item} onClick={() => toggle(item)} />
 				))}
 				<S.LinksWrapper>
-					<S.HerokuLink href={data.heroku} target='_blank'>
+					{data.heroku && <S.HerokuLink href={data.heroku} target='_blank'>
 						<S.HerokuIcon />
 					</S.HerokuLink>
+					}
 					<S.GitLink href={data.git} target='_blank'>
 						<S.GitIcon />
 					</S.GitLink>
@@ -21,7 +22,7 @@ const MyWorkCard = ({ data, toggle }) => {
 				<S.Content>
 					<S.ContentTitle>{data.title}</S.ContentTitle>
 					{data.paragraph.map((p) => (
-						<S.Paragraph>{p}</S.Paragraph>
+						<S.Paragraph key={data.paragraph.indexOf(p)} >{p}</S.Paragraph>
 					))}
 				</S.Content>
 			</S.RightWrapper>

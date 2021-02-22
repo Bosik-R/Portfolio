@@ -16,15 +16,14 @@ const MyWork = () => {
 		<S.Container id='my_work'>
 			<S.Title>my work</S.Title>
 			<S.Wrapper>
-				<MyWorkCard data={data.portfolio} toggle={toggleOverlay} />
-				<MyWorkCard data={data.madzita} toggle={toggleOverlay} />
-				<MyWorkCard data={data.furnitureShop} toggle={toggleOverlay} />
+				{data.map(project => (
+					<MyWorkCard key={project.title} data={project} toggle={toggleOverlay} />
+				))}
 			</S.Wrapper>
-			{openOverlay ? (
-				<S.Overlay onClick={() => toggleOverlay()}>
+			{openOverlay && <S.Overlay onClick={() => toggleOverlay()}>
 					<S.OverlayItem src={path} alt='my work' />
 				</S.Overlay>
-			) : null}
+			}
 		</S.Container>
 	)
 }
