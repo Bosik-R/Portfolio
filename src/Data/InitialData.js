@@ -54,7 +54,7 @@ export const myWork = [
 			`technologies used: react, styled components, react scrool`,
 			`In the future: export initialData to mongoDB cloud, add new content.`,
 		],
-		image: ['/images/portfolio-1.jpg', '/images/portfolio-2.jpg'],
+		image: ['/images/portfolio1.jpg', '/images/portfolio2.jpg'],
 		git: 'https://github.com/Bosik-R/Portfolio',
 	},
 	{
@@ -65,7 +65,7 @@ export const myWork = [
 			`technologies used: react, router, redux, axsios, thunk, express, mongoDB, mogoose, local storage`,
 			`I'm still improving this project. Comming next: Validation OAuth, React Trasition Group and others...`,
 		],
-		image: ['/images/madzita-1.jpg', '/images/madzita-2.jpg'],
+		image: ['/images/madzita1.jpg', '/images/madzita2.jpg'],
 		heroku: 'https://madzita.herokuapp.com/',
 		git: 'https://github.com/Bosik-R/final__project',
 	},
