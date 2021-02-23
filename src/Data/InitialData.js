@@ -77,7 +77,7 @@ export const myWork = [
 			`I was responsible for adding new functionalities, components and styling. At that time the challenge for me was to add the fade-in fade-out effect on picture change. I used a react spring library but now I think I would choose react transition group. I would also do differently the dropdown menu. But this is the learning process leading to self-improvement.`,
 			`When I find the time I will fix some "team mistakes :)" to make it look awesome.`,
 		],
-		image: ['/images/furniture-shop.jpg'],
+		image: ['/images/furnitureShop.jpg'],
 		heroku: 'https://furniture-tomasz.herokuapp.com/',
 		git: 'https://github.com/Bosik-R/furniture-shop',
 	},
