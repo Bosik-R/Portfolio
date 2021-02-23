@@ -8,6 +8,7 @@ export const Container = styled.div`
 	align-items: center;
 	background-color: #010606;
 	position: relative;
+	padding: 30px 0;
 `;
 
 export const Title = styled.h1`

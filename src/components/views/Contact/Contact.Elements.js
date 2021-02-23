@@ -9,6 +9,7 @@ export const Container = styled.div`
 	justify-content: center;
 	width: 100%;
 	height: 860px;
+	padding: 0 20px;
 `;
 
 export const FormElement = styled.form`
@@ -55,6 +56,14 @@ export const LabelElement = styled.label`
 	width: 70%;
 	text-align: left;
 	padding-bottom: 10px;
+
+	@media (max-width: 768px) {
+		width: 80%;
+	}
+
+	@media (max-width: 425px) {
+		width: 90%;
+	}
 `;
 
 export const InputElement = styled.input`
@@ -62,6 +71,15 @@ export const InputElement = styled.input`
 	height: 40px;
 	border: none;
 	padding: 0 15px;
+
+	@media (max-width: 768px) {
+		width: 80%;
+	}
+
+	@media (max-width: 425px) {
+		width: 90%;
+	}
+
 
 	&:hover,
 	::focus {
@@ -79,6 +97,14 @@ export const TextareaElement = styled.textarea`
 	min-height: 100px;
 	border: none;
 	padding: 5px 15px;
+
+	@media (max-width: 768px) {
+		width: 80%;
+	}
+
+	@media (max-width: 425px) {
+		width: 90%;
+	}
 
 	&:hover,
 	::focus {
@@ -99,4 +125,13 @@ export const SubmitBtn = styled.button`
 	letter-spacing: 4px;
 	padding: 5px 20px;
 	cursor: pointer;
+
+	@media (max-width: 768px) {
+		width: 80%;
+		font-size: 18px;
+	}
+
+	@media (max-width: 425px) {
+		width: 90%;
+	}
 `;
