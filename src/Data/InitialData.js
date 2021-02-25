@@ -19,7 +19,7 @@ export const skillsHard = [
 		name: 'Backend',
 		skills: ['Node.js', 'Express', 'Websocket', 'MongoDB', 'Mongoose'],
 	},
-]
+];
 
 export const skillsSoft = [
 	{ name: 'communication', img: `/images/communication.jpg` },
@@ -28,22 +28,19 @@ export const skillsSoft = [
 	{ name: 'self motivation', img: `/images/self-motivation.jpg` },
 	{ name: 'team worker', img: `/images/team-worker.jpg` },
 	{ name: 'work under pressure', img: `/images/under-pressure.jpg` },
-]
+];
 
 export const aboutMe = {
 	image: '/images/tom.jpg',
-	title:
-		`Hi !  I'm Tom a bootcamp went through, self-learned Junior Web Developer.`,
+	title: `Hi !  I'm Tom a bootcamp went through, self-learned Junior Web Developer.`,
 	paragraph: [
 		`My journey with programming started 10 years ago with building and deploying a HTML web page that I made for a friend. Since then I didn't have the courage to follow that path professionally. And so was until last year when I discovered that you don't need a special degree to be a web developer.`,
 		`I have started a Web Developer bootcamp at KODILLA in March and succesfully finished it in December.`,
 		`I worked on 2 extra projects made by myself and a 3 weeks work simulation as an developer.`,
 		`Apart from bootcamp I participated in a couple of courses and tutorials on YouTube and other sites.`,
-		`This year of learning has lighten my passion for coding. Every minut of my free time i'm spanding on learning and practising.`
-	]
-
-}
-
+		`This year of learning has lighten my passion for coding. Every minute of my free time I spend on learning and practising.`,
+	],
+};
 
 export const myWork = [
 	{
@@ -81,4 +78,4 @@ export const myWork = [
 		heroku: 'https://furniture-tomasz.herokuapp.com/',
 		git: 'https://github.com/Bosik-R/furniture-shop',
 	},
-]
+];
