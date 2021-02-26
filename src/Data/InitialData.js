@@ -47,8 +47,8 @@ export const myWork = [
 		title: 'Portfolio',
 		paragraph: [
 			`This is my latest project, a react page using styled components.`,
-			`I used styled components for the first time and I really liked that library. It's great how you can handle styles through props and states. I refactored it to my Portfolio page. I based it on function components, sometimes "stateless components" and react scrool that provides smooth scrool and window positioning by 'id'.`,
-			`technologies used: react, styled components, react scrool`,
+			`I used styled components for the first time and I really liked that library. It's great how you can handle styles through props and states. I refactored it to my Portfolio page. I based it on function components, sometimes "stateless components" and react scrool that provides smooth scrool. Contact form sends message to a mongoDB cloud dataBase.`,
+			`technologies used: react, styled components, react scrool, axios, express, mongoDB, mongoose.`,
 			`In the future: export initialData to mongoDB cloud, add new content.`,
 		],
 		image: ['/images/portfolio1.jpg', '/images/portfolio2.jpg'],

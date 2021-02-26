@@ -23,8 +23,8 @@ export const FormElement = styled.form`
 `;
 
 export const MessageSucces = styled.p`
-	font-size: ${({ message }) => (message ? '24px' : '0px')};
-	opacity: ${({ message }) => (message ? '1' : '0')};
+	font-size: ${({ send }) => (send ? '24px' : '0px')};
+	opacity: ${({ send }) => (send ? '1' : '0')};
 	padding: 20px;
 	color: #01bf71;
 	text-align: center;
@@ -41,6 +41,27 @@ export const MessageSucces = styled.p`
 		padding: 10px 0;
 	}
 `;
+
+export const MessageError = styled.p`
+	font-size: ${({ unSend }) => (unSend ? '24px' : '0px')};
+	opacity: ${({ unSend }) => (unSend ? '1' : '0')};
+	padding: 20px;
+	color: #db0202;
+	text-align: center;
+	width: 100%;
+	transition: all 0.5s ease-in-out;
+
+	@media (max-width: 767px) {
+		font-size: 24px;
+		padding: 15px 0;
+	}
+
+	@media (max-width: 425px) {
+		font-size: 16px;
+		padding: 10px 0;
+	}
+`;
+
 
 export const Row = styled.div`
 	width: 100%;
