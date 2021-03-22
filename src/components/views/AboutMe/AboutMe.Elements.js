@@ -35,6 +35,7 @@ export const Wrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
+	margin: 0 20px;
 	box-shadow: 7px 12px 15px 5px #555555;
 
 	@media (max-width: 768px) {
@@ -90,68 +91,74 @@ export const Paragraph = styled.p`
 
 export const RightColumn = styled.div`
 	width: 35%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	padding: 40px 20px;
+	//padding: 40px 20px;
 
 	@media (max-width: 768px) {
 		order: 1;
 		width: 100%;
 		align-items: center;
 		justify-content: flex-start;
-		padding-bottom: 50px;
+		padding-bottom: 150px;
 	}
 `;
 
 export const ImageWrapper = styled.div`
-	width: 300px;
-	height: auto;
+	max-width: 400px;
+	width: 100%;
+	height: 100%;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: relative;
+	padding: 40px 20px;
 	@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
 	@media (max-width: 425px) {
-		width: 200px;
+		//width: 200px;
 	}
 
 	&::before {
-		content: 'Tomasz';
+		content: 'Tomasz Rosik';
 		position: absolute;
-		bottom: -60px;
-		left: 15px;
+		bottom: -80px;
 		font-size: 60px;
 		font-family: 'Cookie', cursive;
 
-		@media (max-width: 768px) {
-			font-size: 40px;
-			bottom: -40px;
-			left: 50px;
-		}
-
-		@media (max-width: 425px) {
-			left: 10px;
-		}
+		//@media (max-width: 768px) {
+		//	font-size: 40px;
+		//	bottom: -40px;
+		//	left: 50px;
+		//}
+		//
+		//@media (max-width: 425px) {
+		//	left: 10px;
+		//}
 	}
 
 	&::after {
-		content: 'Rosik';
+		content: '';
 		position: absolute;
-		bottom: -60px;
-		right: 40px;
-		font-size: 60px;
-		font-family: 'Cookie', cursive;
+		bottom: 0;
+		width: 100px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: #e1e1e1;
+		z-index: 1;
 
-		@media (max-width: 768px) {
-			font-size: 40px;
-			bottom: -40px;
-			right: 76px;
-		}
-
-		@media (max-width: 425px) {
-			right: 25px;
-		}
+		//@media (max-width: 768px) {
+		//	font-size: 40px;
+		//	bottom: -40px;
+		//	right: 76px;
+		//}
+		//
+		//@media (max-width: 425px) {
+		//	bottom: 0;
+		//}
 	}
 `;
 
@@ -160,18 +167,17 @@ export const Svg = styled.img`
 `;
 
 export const Image = styled.img`
-	position: absolute;
-	top: 77px;
-	left: 77px;
-	width: 142px;
-	height: 153px;
+	width: 200px;
+	height: auto;
 	border-radius: 50%;
+	border: 10px solid #01bf71;
+	z-index: 2;
 
-	@media (max-width: 425px) {
-		top: 52%;
-		left: 50%;
-		width: 90px;
-		height: 90px;
-		transform: translate(-50%, -50%);
-	}
+	//@media (max-width: 425px) {
+	//	top: 52%;
+	//	left: 50%;
+	//	width: 90px;
+	//	height: 90px;
+	//	transform: translate(-50%, -50%);
+	//}
 `;
