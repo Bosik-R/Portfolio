@@ -108,8 +108,14 @@ export const Span = styled.span`
 	text-transform: uppercase;
 	font-size: 26px;
 	font-weight: bold;
-	color: #ff0000;
 	padding-left: 10px;
+	background: #ffffff;
+	background: linear-gradient(to right, #ffffff 0%, #ff2200 70%);
+	background-clip: text;
+	background: -webkit-linear-gradient(to right, #ffffff 0%, #ff2200 70%);
+	background: -moz-linear-gradient(to right, #ffffff 0%, #ff2200 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 
 	@media (max-width: 767px) {
 		font-size: 20px;

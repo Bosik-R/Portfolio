@@ -1,6 +1,5 @@
 import React from 'react';
 import * as S from './AboutMe.Elements';
-import svg from '../../../images/profile.svg';
 import me from '../../../images/tom.jpg';
 import { aboutMe as data } from '../../../Data/InitialData';
 

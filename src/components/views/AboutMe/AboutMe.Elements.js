@@ -96,7 +96,6 @@ export const RightColumn = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	//padding: 40px 20px;
 
 	@media (max-width: 768px) {
 		order: 1;
@@ -118,26 +117,12 @@ export const ImageWrapper = styled.div`
 	padding: 40px 20px;
 	@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
-	@media (max-width: 425px) {
-		//width: 200px;
-	}
-
 	&::before {
 		content: 'Tomasz Rosik';
 		position: absolute;
 		bottom: -80px;
 		font-size: 60px;
 		font-family: 'Cookie', cursive;
-
-		//@media (max-width: 768px) {
-		//	font-size: 40px;
-		//	bottom: -40px;
-		//	left: 50px;
-		//}
-		//
-		//@media (max-width: 425px) {
-		//	left: 10px;
-		//}
 	}
 
 	&::after {
@@ -149,21 +134,7 @@ export const ImageWrapper = styled.div`
 		border-radius: 50%;
 		background-color: #e1e1e1;
 		z-index: 1;
-
-		//@media (max-width: 768px) {
-		//	font-size: 40px;
-		//	bottom: -40px;
-		//	right: 76px;
-		//}
-		//
-		//@media (max-width: 425px) {
-		//	bottom: 0;
-		//}
 	}
-`;
-
-export const Svg = styled.img`
-	width: 100%;
 `;
 
 export const Image = styled.img`
@@ -172,12 +143,4 @@ export const Image = styled.img`
 	border-radius: 50%;
 	border: 10px solid #01bf71;
 	z-index: 2;
-
-	//@media (max-width: 425px) {
-	//	top: 52%;
-	//	left: 50%;
-	//	width: 90px;
-	//	height: 90px;
-	//	transform: translate(-50%, -50%);
-	//}
 `;
