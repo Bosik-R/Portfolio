@@ -1,3 +1,38 @@
+export const links = {
+	git: 'https://github.com/Bosik-R',
+	linkedin: 'https://www.linkedin.com/in/tomasz-rosik-3b55381bb',
+	cv: '../../../images/Tomasz Rosik.pdf',
+};
+
+export const mySkills = {
+	frontEnd: [
+		'/images/skills/html5.png',
+		'/images/skills/css.png',
+		'/images/skills/javascript.png',
+		'/images/skills/sass.png',
+		'/images/skills/es6.png',
+		'/images/skills/bootstrap.png',
+		'/images/skills/handlebars.png',
+		'/images/skills/react.png',
+		'/images/skills/react redux.png',
+		'/images/skills/react router.png',
+		'/images/skills/styled components.png',
+	],
+	backEnd: [
+		'/images/skills/nodeJS.png',
+		'/images/skills/expressJS.png',
+		'/images/skills/websocket.png',
+		'/images/skills/mongoDB.png',
+		'/images/skills/mongoose.png',
+	],
+	build: [
+		'/images/skills/npm.png',
+		'/images/skills/gitHub.png',
+		'/images/skills/webpack.png',
+		'/images/skills/jira.png',
+	],
+};
+
 export const skillsHard = [
 	{
 		name: 'Frontend',
@@ -112,7 +147,7 @@ export const projects = [
 			'node.js',
 			'express',
 			'mongoDB',
-			'mogoose',
+			'mongoose',
 		],
 		description: [
 			`I built from scrach a react based online shop. This was a final project in the Web Developer bootcamp at "KODILLA".`,

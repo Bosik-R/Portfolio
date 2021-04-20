@@ -76,6 +76,11 @@ export const TitleWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-wrap: nowrap;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		align-items: center;
+	}
 `;
 
 export const Title = styled.h1`
@@ -126,7 +131,7 @@ export const GlitchFront = styled.span`
 	right: 0;
 	animation: glitch 2.5s infinite;
 	clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-	transform: translate(-0.025em, -0.0125em);
+	transform: translate(-0.055em, -0.025em);
 	opacity: 0.8;
 
 	@keyframes glitch {
@@ -220,27 +225,8 @@ export const Lumin = styled.div`
 	width: 100%;
 	height: 2px;
 	background-color: #01bf71;
-	//box-shadow: 0px 0px 10px 4px #01e087;
+	box-shadow: 0px 0px 10px 4px #01e087;
 	margin: 20px 0 10px 0;
-	animation: pulse-anime 5s infinite;
-
-	@keyframes pulse-anime {
-		0% {
-			box-shadow: 0 0 7px 1px #01e087;
-		}
-		25% {
-			boxshadow: 0 0 9px 2px #01e087;
-		}
-		50% {
-			boxshadow: 0 0 11px 3px #01e087;
-		}
-		75% {
-			boxshadow: 0 0 13px 4px #01e087;
-		}
-		100% {
-			boxshadow: 0 0 15px 5px #01e087;
-		}
-	}
 `;
 
 export const Link = styled.a`

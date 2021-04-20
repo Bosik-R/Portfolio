@@ -1,6 +1,7 @@
 import React from 'react';
 import Video from '../../../videos/video.mp4';
-import Resume from '../../../images/Tomasz Rosik.pdf';
+import { links } from '../../../Data/InitialData';
+//import Resume from '../../../images/Tomasz Rosik.pdf';
 import * as S from './Hero.Elements';
 
 const Hero = () => {
@@ -20,16 +21,13 @@ const Hero = () => {
 				</S.TitleWrapper>
 				<S.Lumin />
 				<S.BtnWrapper>
-					<S.Link href='https://github.com/Bosik-R' target='blank'>
+					<S.Link href={links.git} target='blank'>
 						Git
 					</S.Link>
-					<S.Link
-						href='https://www.linkedin.com/in/tomasz-rosik-3b55381bb'
-						target='blank'
-					>
+					<S.Link href={links.linkedin} target='blank'>
 						LinkedIn
 					</S.Link>
-					<S.Link href={Resume} download>
+					<S.Link href={links.cv} download>
 						Resume
 					</S.Link>
 				</S.BtnWrapper>
