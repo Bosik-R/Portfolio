@@ -9,14 +9,11 @@ const Sidebar = ({ isOpen, toggle }) => {
 			</S.Icon>
 			<S.Wrapper>
 				<S.Menu>
-					<S.Link to='who_am_I' onClick={toggle}>
-						who am I
+					<S.Link to='my_work' onClick={toggle}>
+						my work
 					</S.Link>
 					<S.Link to='my_skills' onClick={toggle}>
 						my skills
-					</S.Link>
-					<S.Link to='my_work' onClick={toggle}>
-						my work
 					</S.Link>
 					<S.Link to='contact' onClick={toggle}>
 						contact

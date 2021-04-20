@@ -112,6 +112,10 @@ export const Tech = styled.span`
 	margin: 5px;
 	color: #ffffff;
 	background-color: #01bf71;
+
+	@media (max-width: 768px) {
+		font-size: 10px;
+	}
 `;
 
 export const Description = styled.div`
@@ -142,11 +146,22 @@ export const Paragraph = styled.p`
 	text-indent: 20px;
 	text-align: justify;
 	text-justify: inter-word;
+
+	@media (max-width: 768px) {
+		font-size: 12px;
+	}
 `;
 
 export const LinksWrapper = styled.div`
 	padding: 10px 20px;
 	margin: 20px 0;
+	display: flex;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
 `;
 
 export const Link = styled.a`
@@ -156,15 +171,43 @@ export const Link = styled.a`
 	margin-right: 20px;
 	font-size: 14px;
 	cursor: pointer;
-	color: #fff;
+	color: #ffffff;
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	border-radius: 10px;
-	box-shadow: 5px 5px 10px -4px #ffffff;
+	transition: all 0.2s ease;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: 10px;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	&:hover {
+		box-shadow: 4px 4px 10px -4px #ffffff;
+
+		&::after {
+			z-index: -1;
+		}
+	}
 
 	&:active {
-		top: 5px;
-		left: 5px;
+		color: #fff;
+		top: 3px;
+		left: 3px;
 		box-shadow: 0px 0px 7px -4px #ffffff;
+	}
+
+	@media (max-width: 768px) {
+		margin-bottom: 15px;
+
+		&::after {
+			z-index: -1;
+		}
 	}
 `;
 

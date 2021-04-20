@@ -4,6 +4,7 @@ import LanguageSkills from '../../features/LanguageSkills/LanguageSkills';
 import SoftSkills from '../../features/SoftSkills/SoftSkills';
 import * as S from './Skills.Elements';
 import Certificat from '../../../images/certificat.jpg';
+import IconHtml from '../../../images/html-logo.png';
 
 const Skills = () => {
 	const [openOverlay, setOpenOverlay] = useState(false);
@@ -19,8 +20,9 @@ const Skills = () => {
 				<S.Wrapper>
 					<HardSkills toggle={toggleOverlay} />
 					<SoftSkills />
-					<LanguageSkills />
+					{/* <LanguageSkills /> */}
 				</S.Wrapper>
+				<S.Html src={IconHtml} />
 				{openOverlay ? (
 					<S.Overlay onClick={() => toggleOverlay()}>
 						<S.OverlayItem src={Certificat} alt='certificat' />

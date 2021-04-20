@@ -3,9 +3,7 @@ import * as S from './ProjectCard.Elements';
 
 const ProjectCard = ({ title, description, tech, images, git, live }) => {
 	const [index, setIndex] = useState(0);
-	const [click, setClick] = useState(false);
-
-	console.log(click);
+	const [displayPrev, setDisplayPrev] = useState(false);
 
 	const nextImage = () => {
 		setIndex(index + 1);
@@ -15,14 +13,12 @@ const ProjectCard = ({ title, description, tech, images, git, live }) => {
 		setIndex(index - 1);
 	};
 
-	const pushButton = () => {};
-
 	return (
 		<S.Card>
 			<S.ImageWrapper>
 				{images.length > 1 ? (
 					index > 0 ? (
-						<S.ArrowIconLeft onClick={() => prevImage()} />
+						<S.ArrowIconLeft onClick={() => prevImage(images)} />
 					) : null
 				) : null}
 				<S.Image src={images[index]} />

@@ -6,7 +6,7 @@ export const Container = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #010606;
+	background-color: #ffffff;
 	position: relative;
 	padding: 30px 0;
 `;
@@ -30,6 +30,9 @@ export const Wrapper = styled.div`
 	align-items: flex-start;
 `;
 
+export const Html = styled.img`
+	width: 100px;
+`;
 export const Overlay = styled.div`
 	position: absolute;
 	top: 0;

@@ -3,7 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 import * as S from './NavBar.Elements';
 
-const NavBar = ({ toggle, visible }) => {
+const NavBar = ({ toggle }) => {
 	const [scrollNav, setScrollNav] = useState(false);
 
 	const changeNav = () => {
@@ -26,21 +26,21 @@ const NavBar = ({ toggle, visible }) => {
 		<>
 			<S.Nav scrollNav={scrollNav}>
 				<S.NavBarContainer>
-					<S.NavLogo onClick={toggleHome}>Portfolio</S.NavLogo>
+					<S.NavLogo onClick={toggleHome}>Home</S.NavLogo>
 					<S.MobileIcon onClick={toggle}>
 						<FaBars />
 					</S.MobileIcon>
-					<S.NavMenu visible={visible}>
+					<S.NavMenu>
 						<S.NavItem>
 							<S.NavLinks
-								to='who_am_I'
+								to='my_work'
 								smooth={true}
 								duration={500}
 								spy={true}
 								exact='true'
 								offset={-80}
 							>
-								who am i
+								my work
 							</S.NavLinks>
 						</S.NavItem>
 						<S.NavItem>
@@ -53,18 +53,6 @@ const NavBar = ({ toggle, visible }) => {
 								offset={-80}
 							>
 								my skills
-							</S.NavLinks>
-						</S.NavItem>
-						<S.NavItem>
-							<S.NavLinks
-								to='my_work'
-								smooth={true}
-								duration={500}
-								spy={true}
-								exact='true'
-								offset={-80}
-							>
-								my work
 							</S.NavLinks>
 						</S.NavItem>
 						<S.NavItem>

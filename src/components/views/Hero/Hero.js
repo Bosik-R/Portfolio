@@ -1,48 +1,37 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Video from '../../../videos/video.mp4';
+import Resume from '../../../images/Tomasz Rosik.pdf';
 import * as S from './Hero.Elements';
 
-const Hero = ({ visible }) => {
-	const [isHover, setIsHover] = useState(false);
-	const [hiden, setHiden] = useState(false);
-
-	const onHover = () => {
-		setIsHover(!isHover);
-	};
-
-	const hideButton = () => {
-		setHiden(true);
-		visible();
-	};
-
+const Hero = () => {
 	return (
 		<S.Container>
 			<S.HeroBg>
 				<S.VideoBg autoPlay loop muted src={Video} type='video/mp4' />
 			</S.HeroBg>
 			<S.Content>
-				<S.Title>Hi. I'm Tomasz Rosik</S.Title>
-				<S.Paragraph>
-					welcome to my
-					<S.Span>portfolio website</S.Span>
-				</S.Paragraph>
+				<S.TitleWrapper>
+					<S.Title>Hi. I'm Tomasz Rosik a</S.Title>
+					<S.Glitch>
+						<S.GlitchFront>Web Developer</S.GlitchFront>
+						Web Developer
+						<S.GlitchBack>Web Developer</S.GlitchBack>
+					</S.Glitch>
+				</S.TitleWrapper>
+				<S.Lumin />
 				<S.BtnWrapper>
-					<S.Button
-						to='contact'
-						onClick={() => hideButton()}
-						hiden={hiden}
-						isHover={isHover}
-						onMouseEnter={() => onHover()}
-						onMouseLeave={() => onHover()}
+					<S.Link href='https://github.com/Bosik-R' target='blank'>
+						Git
+					</S.Link>
+					<S.Link
+						href='https://www.linkedin.com/in/tomasz-rosik-3b55381bb'
+						target='blank'
 					>
-						<S.BtnContent isHover={isHover}>have a look</S.BtnContent>
-						<S.IconHidenWrapper isHover={isHover}>
-							<S.EyeHiden />
-						</S.IconHidenWrapper>
-						<S.IconVisibleWrapper isHover={isHover}>
-							<S.EyeVisible />
-						</S.IconVisibleWrapper>
-					</S.Button>
+						LinkedIn
+					</S.Link>
+					<S.Link href={Resume} download>
+						Resume
+					</S.Link>
 				</S.BtnWrapper>
 			</S.Content>
 		</S.Container>

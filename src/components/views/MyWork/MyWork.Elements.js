@@ -9,6 +9,7 @@ export const Container = styled.div`
 	flex-direction: column;
 	background-color: #fff;
 	position: relative;
+	background-color: #010606;
 `;
 
 export const Title = styled.h1`
@@ -16,6 +17,7 @@ export const Title = styled.h1`
 	color: #010606;
 	margin-bottom: 60px;
 	margin-top: 30px;
+	color: #ffffff;
 
 	@media (max-width: 480px) {
 		font-size: 20px;
@@ -23,12 +25,19 @@ export const Title = styled.h1`
 `;
 
 export const Wrapper = styled.div`
-	max-width: 1280px;
+	//max-width: 1280px;
+	padding: 20px;
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: flex-start;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	@media (min-width: 1860px) {
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 `;
 
 export const Card = styled.div`
