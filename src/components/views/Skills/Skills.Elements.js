@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Section = styled.section`
 	min-height: 860px;
 	display: flex;
 	flex-direction: column;
@@ -46,7 +46,7 @@ export const BackEnd = styled.div`
 	background-color: #ffffff;
 	border-radius: 10px;
 
-	@media (max-width: 600px) {
+	@media (max-width: 767px) {
 		width: 100%;
 		margin-bottom: 30px;
 	}
@@ -59,7 +59,7 @@ export const BuildManagement = styled.div`
 	background-color: #ffffff;
 	border-radius: 10px;
 
-	@media (max-width: 600px) {
+	@media (max-width: 767px) {
 		width: 100%;
 		margin-bottom: 30px;
 	}
@@ -67,12 +67,12 @@ export const BuildManagement = styled.div`
 
 export const SkillTitle = styled.h2`
 	font-weight: bold;
-	padding: 20px 10px;
-	margin-bottom: 10px;
+	padding: 15px;
 	border-radius: 10px 10px 0 0;
 	background-color: #01bf71;
 	color: #ffffff;
 	letter-spacing: 2px;
+	text-shadow: 4px 4px 4px #0b1122;
 `;
 
 export const Underline = styled.div``;
@@ -92,18 +92,19 @@ export const Skill = styled.img`
 	background-color: #ffffff;
 `;
 
-export const Overlay = styled.div`
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display: grid;
-	place-content: center;
-	background-color: rgba(0, 0, 0, 0.86);
+export const OverlayButton = styled.button`
+	cursor: pointer;
+	width: 150px;
+	margin-top: 50px;
+	transition: all 0.3s ease;
+	border-radius: 10px;
+
+	&:hover {
+		transform: scale(1.05);
+	}
 `;
 
-export const OverlayItem = styled.img`
+export const Certificat = styled.img`
 	width: 100%;
-	z-index: 10;
+	border-radius: inherit;
 `;
