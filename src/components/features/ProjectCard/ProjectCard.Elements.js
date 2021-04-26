@@ -1,9 +1,10 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { ChevronCompactLeft } from '@styled-icons/bootstrap/ChevronCompactLeft';
 import { ChevronCompactRight } from '@styled-icons/bootstrap/ChevronCompactRight';
 import { Eye } from '@styled-icons/heroicons-solid/Eye';
 import { Github } from '@styled-icons/boxicons-logos/Github';
+import { ButtonBack, ButtonNext } from 'pure-react-carousel';
 
 export const Card = styled.div`
 	position: relative;
@@ -23,19 +24,24 @@ export const Card = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
+	order: ${({ invert }) => (invert ? '2' : '1')};
 	position: relative;
 	max-width: 480px;
+	max-height: 480px;
 	width: 100%;
+	height: 100%;
+	overflow: hidden;
 	height: auto;
 	object-fit: fill;
-	margin-right: 20px;
+	margin: ${({ invert }) => (invert ? '0 0 0 20px ' : '0 20px 0 0')};
 	border-radius: 10px;
 	font-size: 0; // set on parent element to fix the 4px gap between div and img that represents whitespace for img
 
 	@media (max-width: 768px) {
-		margin-right: 0;
-		margin-bottom: 20px;
+		margin: 0 0 20px 0;
+		order: 1;
 		max-width: 768px;
+		max-height: 768px;
 	}
 `;
 
@@ -43,34 +49,69 @@ export const Image = styled.img`
 	width: 100%;
 	height: 100%;
 	border-radius: 10px;
+	opacity: ${({ fade }) => (fade ? '0' : '1')};
+	transition: all 0.5s linear;
 `;
-
-export const ArrowIconLeft = styled(ChevronCompactLeft)`
+export const ButtonsWrapper = styled.div`
 	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+`;
+const sharedStyles = css`
+	position: absolute;
+	background-color: #01bf71;
+	transition: opacity 0.4s;
+	height: 60px;
+	width: 30px;
+	display: grid;
+	place-items: center;
+	border: none;
+	transform: translateY(-50%);
+
+	&:disabled {
+		opacity: 0;
+	}
+
+	@media (max-width: 450px) {
+		height: 40px;
+		width: 20px;
+	}
+`;
+export const BackBtn = styled(ButtonBack)`
+	${sharedStyles};
 	top: 50%;
 	left: 0;
-	height: 60px;
-	width: 25px;
-	color: #ffffff;
-	background-color: #01bf71;
-	transform: translateY(-50%);
-	cursor: pointer;
 	border-radius: 0px 5px 5px 0px;
 `;
-export const ArrowIconRight = styled(ChevronCompactRight)`
-	position: absolute;
-	background-color: #01bf71;
+
+export const NextBtn = styled(ButtonNext)`
+	${sharedStyles};
 	top: 50%;
 	right: 0;
-	height: 60px;
-	width: 25px;
-	color: #ffffff;
-	transform: translateY(-50%);
-	cursor: pointer;
 	border-radius: 5px 0px 0px 5px;
 `;
 
+const sharedIconStyles = css`
+	font-size: 40px;
+	color: #ffffff;
+
+	@media (max-width: 450px) {
+		font-size: 15px;
+	}
+`;
+
+export const ArrowIconLeft = styled(ChevronCompactLeft)`
+	${sharedIconStyles};
+`;
+
+export const ArrowIconRight = styled(ChevronCompactRight)`
+	${sharedIconStyles};
+`;
+
 export const CardContent = styled.div`
+	order: ${({ invert }) => (invert ? '1' : '2')};
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -84,6 +125,7 @@ export const CardContent = styled.div`
 
 	@media (max-width: 768px) {
 		width: 100%;
+		order: 2;
 	}
 `;
 

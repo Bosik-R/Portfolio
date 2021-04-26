@@ -1,34 +1,44 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as S from './ProjectCard.Elements';
+import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
-const ProjectCard = ({ title, description, tech, images, git, live }) => {
-	const [index, setIndex] = useState(0);
-	const [displayPrev, setDisplayPrev] = useState(false);
-
-	const nextImage = () => {
-		setIndex(index + 1);
-	};
-
-	const prevImage = () => {
-		setIndex(index - 1);
-	};
-
+const ProjectCard = ({
+	title,
+	invert,
+	description,
+	tech,
+	images,
+	git,
+	live,
+}) => {
 	return (
 		<S.Card>
-			<S.ImageWrapper>
-				{images.length > 1 ? (
-					index > 0 ? (
-						<S.ArrowIconLeft onClick={() => prevImage(images)} />
-					) : null
-				) : null}
-				<S.Image src={images[index]} />
-				{images.length > 1 ? (
-					index !== images.length - 1 ? (
-						<S.ArrowIconRight onClick={() => nextImage()} />
-					) : null
-				) : null}
+			<S.ImageWrapper invert={invert}>
+				<CarouselProvider
+					naturalSlideWidth={480}
+					naturalSlideHeight={480}
+					totalSlides={images.length}
+					visibleSlides={1}
+				>
+					<Slider>
+						{images.map((item, index) => (
+							<Slide index={index} key={index}>
+								<S.Image src={item} />
+							</Slide>
+						))}
+					</Slider>
+					<S.ButtonsWrapper>
+						<S.BackBtn>
+							<S.ArrowIconLeft />
+						</S.BackBtn>
+						<S.NextBtn>
+							<S.ArrowIconRight />
+						</S.NextBtn>
+					</S.ButtonsWrapper>
+				</CarouselProvider>
 			</S.ImageWrapper>
-			<S.CardContent>
+			<S.CardContent invert={invert}>
 				<S.Title>{title}</S.Title>
 				{tech && (
 					<S.TechWrapper>
