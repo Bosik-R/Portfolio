@@ -8,31 +8,16 @@ const Skills = ({ toggleOverlay }) => {
 		<S.Section id='my_skills'>
 			<S.Title>my skills</S.Title>
 			<S.Wrapper>
-				<S.FrontEnd>
-					<S.SkillTitle>Frontend</S.SkillTitle>
-					<S.Underline />
-					<S.SkillsWrapper>
-						{mySkills.frontEnd.map((skill, index) => (
-							<S.Skill key={index} src={skill} />
-						))}
-					</S.SkillsWrapper>
-				</S.FrontEnd>
-				<S.BackEnd>
-					<S.SkillTitle>Backend</S.SkillTitle>
-					<S.SkillsWrapper>
-						{mySkills.backEnd.map((skill, index) => (
-							<S.Skill key={index} src={skill} />
-						))}
-					</S.SkillsWrapper>
-				</S.BackEnd>
-				<S.BuildManagement>
-					<S.SkillTitle>Build and Management</S.SkillTitle>
-					<S.SkillsWrapper>
-						{mySkills.build.map((skill, index) => (
-							<S.Skill key={index} src={skill} />
-						))}
-					</S.SkillsWrapper>
-				</S.BuildManagement>
+				{mySkills.map((category, index) => (
+					<S.CategoryCard width={category.width} key={index}>
+						<S.CategoryTitle>{category.title}</S.CategoryTitle>
+						<S.SkillsWrapper>
+							{category.skills.map((skill, index) => (
+								<S.Skill key={index} src={skill} />
+							))}
+						</S.SkillsWrapper>
+					</S.CategoryCard>
+				))}
 			</S.Wrapper>
 			<S.OverlayButton onClick={toggleOverlay}>
 				<S.Certificat src={Certificat} />

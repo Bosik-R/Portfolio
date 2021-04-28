@@ -6,12 +6,12 @@ import { Eye } from '@styled-icons/heroicons-solid/Eye';
 import { Github } from '@styled-icons/boxicons-logos/Github';
 import { ButtonBack, ButtonNext } from 'pure-react-carousel';
 
-export const Card = styled.div`
+export const Card = styled.article`
 	position: relative;
 	max-width: 1024px;
 	width: 100%;
 	height: 520px;
-	margin: 20px;
+	margin: 0 20px 20px 20px;
 	display: flex;
 	border: 20px solid #0b1122;
 	border-radius: 10px;

@@ -4,7 +4,7 @@ export const Section = styled.section`
 	min-height: 860px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	background-color: #010606;
 	position: relative;
@@ -30,42 +30,20 @@ export const Wrapper = styled.div`
 	align-items: flex-start;
 `;
 
-export const FrontEnd = styled.div`
-	width: 100%;
+export const CategoryCard = styled.div`
 	display: flex;
 	flex-direction: column;
+	width: ${(props) => props.width};
 	background-color: #ffffff;
 	border-radius: 10px;
 	margin-bottom: 30px;
-`;
-
-export const BackEnd = styled.div`
-	width: 55%;
-	display: flex;
-	flex-direction: column;
-	background-color: #ffffff;
-	border-radius: 10px;
 
 	@media (max-width: 767px) {
 		width: 100%;
-		margin-bottom: 30px;
 	}
 `;
 
-export const BuildManagement = styled.div`
-	width: 42%;
-	display: flex;
-	flex-direction: column;
-	background-color: #ffffff;
-	border-radius: 10px;
-
-	@media (max-width: 767px) {
-		width: 100%;
-		margin-bottom: 30px;
-	}
-`;
-
-export const SkillTitle = styled.h2`
+export const CategoryTitle = styled.h2`
 	font-weight: bold;
 	padding: 15px;
 	border-radius: 10px 10px 0 0;
@@ -74,8 +52,6 @@ export const SkillTitle = styled.h2`
 	letter-spacing: 2px;
 	text-shadow: 4px 4px 4px #0b1122;
 `;
-
-export const Underline = styled.div``;
 
 export const SkillsWrapper = styled.div`
 	width: 100%;

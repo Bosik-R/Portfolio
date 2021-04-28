@@ -13,6 +13,10 @@ export const Nav = styled.nav`
 	top: 0;
 	z-index: 10;
 	transition: 0.8s all ease;
+
+	@media (max-width: 767px) {
+		height: 50px;
+	}
 `;
 
 export const NavBarContainer = styled.div`
@@ -36,6 +40,10 @@ export const NavLogo = styled.button`
 	outline-style: solid;
 	outline-color: transparent;
 	border: none;
+
+	&:hover {
+		color: #01bf71;
+	}
 `;
 
 export const MobileIcon = styled.div`
