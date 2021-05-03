@@ -188,6 +188,7 @@ export const Paragraph = styled.p`
 	text-indent: 20px;
 	text-align: justify;
 	text-justify: inter-word;
+	margin-bottom: 10px;
 
 	@media (max-width: 768px) {
 		font-size: 12px;

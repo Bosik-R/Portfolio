@@ -26,7 +26,6 @@ export const FormElement = styled.form`
 	max-width: 600px;
 	width: 100%;
 	background-color: inherit;
-	//margin: 20px;
 	padding: 20px 0;
 	border: 10px solid #01bf71;
 	border-radius: 50px;

@@ -27,7 +27,7 @@ const Hero = () => {
 					<S.Link href={links.linkedin} target='blank'>
 						LinkedIn
 					</S.Link>
-					<S.Link href={CV} download>
+					<S.Link href={CV} target='blank'>
 						Resume
 					</S.Link>
 				</S.BtnWrapper>
