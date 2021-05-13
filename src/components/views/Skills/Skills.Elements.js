@@ -70,7 +70,7 @@ export const Skill = styled.img`
 
 export const OverlayButton = styled.button`
 	cursor: pointer;
-	width: 150px;
+	width: 450px;
 	margin-top: 50px;
 	transition: all 0.3s ease;
 	border-radius: 10px;

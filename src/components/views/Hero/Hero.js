@@ -33,12 +33,12 @@ const Hero = () => {
 				</S.BtnWrapper>
 				<S.ParagraphWrapper>
 					<S.MyStory>
-						<S.TextColor>{aboutMe.myStoryColor}</S.TextColor>
-						{aboutMe.myStory}
+						<S.TextColor>{aboutMe.myStory[0]}</S.TextColor>
+						{aboutMe.myStory[1]}
 					</S.MyStory>
 					<S.MyGool>
-						<S.TextColor>{aboutMe.myGoolColor}</S.TextColor>
-						{aboutMe.myGool}
+						<S.TextColor>{aboutMe.myGool[0]}</S.TextColor>
+						{aboutMe.myGool[1]}
 					</S.MyGool>
 				</S.ParagraphWrapper>
 			</S.Content>
