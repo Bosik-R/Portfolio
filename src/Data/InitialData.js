@@ -4,11 +4,16 @@ export const links = {
 };
 
 export const aboutMe = {
-	myStoryColor: `I'm Tom a bootcamp went through, self-learned Web Developer. `,
-	myStory: `I always had a passion for programming that's why I dicided to make it my all day work. Last year I complited a 9 month Web Developer bootcamp. `,
-
-	myGoolColor: `Apart from bootcamp I'm sill learning new things. `,
-	myGool: `I went though a couple of tutorials on YouTube. I'm now starting a Angular course on Udemy, and the next step will be a mobile UI framework React Nativ or Flutter. `,
+	myStory: 
+		[
+			`I'm Tom a Bootcamp went through, self-learned Web Developer. `,
+			`I always had a passion for programming that's why I decided to make it my all-day work. Last year I completed a 9 month Web Developer Bootcamp. `,
+		],
+	myGool: 
+		[
+			`Apart from Bootcamp, I'm still learning new things. `,
+			`I went through a couple of tutorials on YouTube. I'm now starting an Angular course on Udemy, and the next step will be a mobile UI framework React Nativ or Flutter. `,
+		],
 };
 
 export const projects = [
@@ -17,19 +22,15 @@ export const projects = [
 		invert: false,
 		tech: [
 			'react',
-			'styled components',
-			'react scrool',
+			'styled-components',
+			'react-scroll',
 			'pure-react-carousel',
-			'axios',
-			'node.js',
-			'express',
-			'mongoDB',
-			'mongoose',
 		],
 		description: [
-			`This is my latest project, a react page using styled components.`,
-			`I used styled components for the first time and I really liked that library. It's great how you can handle styles through props and states. I refactored it to my Portfolio page. I based it on function components, sometimes "stateless components" and react scrool that provides smooth scrool. Contact form sends message to a mongoDB cloud dataBase.`,
-			`In the future: export initialData to mongoDB cloud, add new content.`,
+			`This is my latest project, a react app using styled-components. `,
+			`I based it on function components, sometimes stateless components. The styled elements are gathered in a separate File for each component and then imported, this gives a cleaner and more organized code. `,
+			`React scroll provides smooth scroll and react pure carousel smooth image sliding. The contact form is linked through a PHP file with my hosting email account. `,
+			`I used styled-components for the first time and I really liked that library. It's great how you can change styles through props and states.`,
 		],
 		images: ['/images/portfolio1.jpg', '/images/portfolio2.jpg'],
 		git: 'https://github.com/Bosik-R/Portfolio',
@@ -41,17 +42,18 @@ export const projects = [
 			'react',
 			'router',
 			'redux',
+			'react-bootstrap',
 			'axios',
 			'thunk',
 			'node.js',
-			'express',
+			'express.js',
 			'mongoDB',
 			'mongoose',
 		],
 		description: [
-			`I built from scrach a react based online shop. This was a final project in the Web Developer bootcamp at "KODILLA".`,
-			`In the shop you are routed through different sub-pages. The dataBase is located on MongoDB cloud. The backend server response to get, getById and post requests. After sending an order you get a response from server with your full order. I used brouser local storage to save cart content.`,
-			`I'm still improving this project. Comming next: Validation OAuth, React Trasition Group and others...`,
+			`Built from scratch a React-based online shop. This was my final project in the Web Developer Bootcamp at "KODILLA". `,
+			`In the shop, you are routed through different sub-pages via react-router.  The initial data is downloaded via Axios from a MongoDB cloud server and connected to the redux store. `,
+			`The node.js server response to get, getById, and post requests. After receiving an order the server sends a response with your full order and a unique ID. I also used browser local storage to save cart content. `,
 		],
 		images: [
 			'/images/madzita1.jpg',
@@ -69,24 +71,76 @@ export const projects = [
 		tech: ['react', 'router', 'redux', 'react-spring'],
 
 		description: [
-			`This is my team project.`,
-			`On my bootcamp course I took part in a developer work simulation that lasted 3 weeks. My group was involved into a project in progress, what was overwelming us at the beginning. We were managing the work through Jira. We had to do daily reports and weekly online meetings.`,
-			`I was responsible for adding new functionalities, components and styling. At that time the challenge for me was to add the fade-in fade-out effect on picture change. I used a react spring library but now I think I would choose react transition group. I would also do differently the dropdown menu. But this is the learning process leading to self-improvement.`,
-			`When I find the time I will fix some "team mistakes :)" to make it look awesome.`,
+			`On my Bootcamp course, I took part in a developer work simulation that lasted 3 weeks. My group was put in the middle of project development. `, 
+			`We were managing the work through Jira where we assigned tasks for ourselves. We had to write daily reports about our progress. We also had weekly online meetings. `,
+			`I was responsible for adding new functionalities like state changes in the product data depending on the user choices. I added the whole Gallery components with styling and functionalities. `,
 		],
 		images: [
 			'/images/furnitureShop1.jpg',
 			'/images/furnitureShop2.jpg',
 			'/images/furnitureShop3.jpg',
 		],
-		live: 'https://furniture-tomasz.herokuapp.com/',
+		live: 'https://furniture.tomasz-rosik.eu/',
 		git: 'https://github.com/Bosik-R/furniture-shop',
 	},
+	{
+		title: 'To Do List',
+		invert: true,
+		tech: ['react', 'router', 'redux', ],
+
+		description: [
+			`This was my introduction to React and the moment I fall in love to React. A simple To-Do List using the redux store to get and handle data, and react-router to navigate between views. `,
+		],
+		images: [
+			'/images/react-first-step1.jpg',
+			'/images/react-first-step2.jpg',
+			'/images/react-first-step3.jpg',
+		],
+		live: 'http://react-first-step.tomasz-rosik.eu/',
+		git: 'https://github.com/Bosik-R/react-first-step',
+	},
+	{
+		title: 'Guseppe Pizza',
+		invert: false,
+		tech: ['HTML', 'javascript', 'OOP', 'SASS', 'AJAX', ],
+
+		description: [
+			`Pizza ordering and table booking page. A project developed during the Bootcamp. This was the introduction to OOP (classes and instances) and AJAX. `,
+			`The main focus was to learn the javascript OOP approach and build an ordering and booking page that sends data to a server. `,
+		],
+		images: [
+			'/images/guseppe1.jpg',
+			'/images/guseppe2.jpg',
+			'/images/guseppe3.jpg',
+			'/images/guseppe4.jpg',
+		],
+		live: 'https://guseppe.herokuapp.com/',
+		git: 'https://github.com/Bosik-R/project-pizzeria',
+	},
+	{
+		title: 'Landing Page',
+		invert: true,
+		tech: ['HTML', 'CSS', 'SASS', ],
+
+		description: [
+			`Pure HTML, CSS, SASS project made during the Bootcamp. The first one that I made almost alone following only design sheets and few tips given by KODILLA. `,
+		],
+		images: [
+			'/images/second-project1.jpg',
+			'/images/second-project2.jpg',
+			'/images/second-project3.jpg',
+		],
+		live: 'http://second-project.tomasz-rosik.eu/',
+	},
+
 ];
+
+
+
 
 export const mySkills = [
 	{
-		title: 'Front End',
+		title: 'Front-End',
 		width: '100%',
 		skills: [
 			'/images/skills/html5.png',
@@ -103,7 +157,7 @@ export const mySkills = [
 		],
 	},
 	{
-		title: 'Back End',
+		title: 'Back-End',
 		width: '55%',
 		skills: [
 			'/images/skills/nodeJS.png',
@@ -117,7 +171,7 @@ export const mySkills = [
 		width: '42%',
 		skills: [
 			'/images/skills/npm.png',
-			'/images/skills/gitHub.png',
+			'/images/skills/github.png',
 			'/images/skills/webpack.png',
 			'/images/skills/jira.png',
 		],

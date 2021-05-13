@@ -13,9 +13,9 @@ export const Card = styled.article`
 	height: 520px;
 	margin: 0 20px 20px 20px;
 	display: flex;
-	border: 20px solid #0b1122;
+	border: 20px solid #18254b;
 	border-radius: 10px;
-	background-color: #0b1122;
+	background-color: #18254b;
 
 	@media (max-width: 768px) {
 		flex-direction: column;
@@ -38,10 +38,10 @@ export const ImageWrapper = styled.div`
 	font-size: 0; // set on parent element to fix the 4px gap between div and img that represents whitespace for img
 
 	@media (max-width: 768px) {
-		margin: 0 0 20px 0;
-		order: 1;
 		max-width: 768px;
 		max-height: 768px;
+		margin: 0;
+		order: 2;
 	}
 `;
 
@@ -125,7 +125,8 @@ export const CardContent = styled.div`
 
 	@media (max-width: 768px) {
 		width: 100%;
-		order: 2;
+		order: 1;
+		margin: 0 0 20px 0;
 	}
 `;
 
@@ -165,7 +166,7 @@ export const Description = styled.div`
 	flex-direction: column;
 	margin: 10px 0;
 	padding: 10px 15px 10px 10px;
-	overflow-y: scroll;
+	overflow-y: auto;
 
 	@media (min-width: 769px) {
 		&::-webkit-scrollbar {

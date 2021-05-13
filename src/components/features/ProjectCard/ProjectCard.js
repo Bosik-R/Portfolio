@@ -59,10 +59,10 @@ const ProjectCard = ({
 							view live
 						</S.Link>
 					)}
-					<S.Link href={git} target='blank'>
+					{git && (<S.Link href={git} target='blank'>
 						<S.GitIcon />
 						view code
-					</S.Link>
+					</S.Link>)}
 				</S.LinksWrapper>
 			</S.CardContent>
 		</S.Card>
