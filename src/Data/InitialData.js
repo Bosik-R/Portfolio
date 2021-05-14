@@ -6,13 +6,13 @@ export const links = {
 export const aboutMe = {
 	myStory: 
 		[
-			`I'm Tom a Bootcamp went through, self-learned Web Developer. `,
-			`I always had a passion for programming that's why I decided to make it my all-day work. Last year I completed a 9 month Web Developer Bootcamp. `,
+			`I'm a Bootcamp went through, self-learned Web Developer. `,
+			`I always liked building and creating things, that's why coding gives me so much joy. So I decided to make it my all-day work and do something that I'm passionate about. `,	
 		],
-	myGool: 
+		myGool: 
 		[
-			`Apart from Bootcamp, I'm still learning new things. `,
-			`I went through a couple of tutorials on YouTube. I'm now starting an Angular course on Udemy, and the next step will be a mobile UI framework React Nativ or Flutter. `,
+			`For a start, I completed a Web Developer Bootcamp at KODILLA. `, 
+			`Apart from it I'm constantly improving my skills and learn new ones. I'm motivated and focused on reaching my goal and work as a full-time developer. `,
 		],
 };
 
@@ -28,8 +28,8 @@ export const projects = [
 		],
 		description: [
 			`This is my latest project, a react app using styled-components. `,
-			`I based it on function components, sometimes stateless components. The styled elements are gathered in a separate File for each component and then imported, this gives a cleaner and more organized code. `,
-			`React scroll provides smooth scroll and react pure carousel smooth image sliding. The contact form is linked through a PHP file with my hosting email account. `,
+			`I based it on function components. The styled elements are gathered in a separate File for each component and then imported. This gives a cleaner and more organized code. `,
+			`React scroll provides smooth scroll and react pure carousel a sleek image sliding. The contact form is linked through PHP with my email account. `,
 			`I used styled-components for the first time and I really liked that library. It's great how you can change styles through props and states.`,
 		],
 		images: ['/images/portfolio1.jpg', '/images/portfolio2.jpg'],
@@ -51,9 +51,9 @@ export const projects = [
 			'mongoose',
 		],
 		description: [
-			`Built from scratch a React-based online shop. This was my final project in the Web Developer Bootcamp at "KODILLA". `,
+			`Built from scratch a React-based online shop. This was my final project in the Web Developer Bootcamp. `,
 			`In the shop, you are routed through different sub-pages via react-router.  The initial data is downloaded via Axios from a MongoDB cloud server and connected to the redux store. `,
-			`The node.js server response to get, getById, and post requests. After receiving an order the server sends a response with your full order and a unique ID. I also used browser local storage to save cart content. `,
+			`The node.js server response to get, getById, and post requests. After receiving an order the server sends a response with your full order and a unique ID created on the mongo cloud server. I also used browser local storage to save cart content. `,
 		],
 		images: [
 			'/images/madzita1.jpg',

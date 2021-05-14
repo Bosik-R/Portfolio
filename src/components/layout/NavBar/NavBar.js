@@ -33,18 +33,6 @@ const NavBar = ({ toggle }) => {
 					<S.NavMenu>
 						<S.NavItem>
 							<S.NavLinks
-								to='my_work'
-								smooth={true}
-								duration={1000}
-								spy={true}
-								exact='true'
-								offset={-80}
-							>
-								my work
-							</S.NavLinks>
-						</S.NavItem>
-						<S.NavItem>
-							<S.NavLinks
 								to='my_skills'
 								smooth={true}
 								duration={1000}
@@ -53,6 +41,18 @@ const NavBar = ({ toggle }) => {
 								offset={-80}
 							>
 								my skills
+							</S.NavLinks>
+						</S.NavItem>
+						<S.NavItem>
+							<S.NavLinks
+								to='my_work'
+								smooth={true}
+								duration={1000}
+								spy={true}
+								exact='true'
+								offset={-80}
+							>
+								my work
 							</S.NavLinks>
 						</S.NavItem>
 						<S.NavItem>

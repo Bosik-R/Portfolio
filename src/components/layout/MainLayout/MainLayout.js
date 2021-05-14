@@ -27,8 +27,8 @@ const MainLayout = () => {
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<NavBar toggle={toggle} />
 			<Hero />
-			<MyWork />
 			<Skills toggleOverlay={toggleOverlay} />
+			<MyWork />
 			<Contact />
 			<S.Overlay overlay={overlay} onClick={() => toggleOverlay()}>
 				<S.ImageWrapper position={position} overlay={overlay}>

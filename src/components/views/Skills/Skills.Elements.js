@@ -70,10 +70,12 @@ export const Skill = styled.img`
 
 export const OverlayButton = styled.button`
 	cursor: pointer;
-	width: 450px;
+	max-width: 450px;
+	width: 95%;
 	margin-top: 50px;
-	transition: all 0.3s ease;
+	border: none;
 	border-radius: 10px;
+	transition: all 0.3s ease;
 
 	&:hover {
 		transform: scale(1.05);
