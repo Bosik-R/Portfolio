@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import * as S from './Contact.Elements';
 
 /* Axios and node server file temporarily disabled. Email via php and hosting provider */
@@ -12,7 +12,7 @@ const Contact = () => {
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 
-/* Axios and node server file temporarily disabled. Email via php and hosting provider */
+	/* Axios and node server file temporarily disabled. Email via php and hosting provider */
 
 	// const sendMessage = async (e) => {
 	// 	e.preventDefault();
@@ -32,15 +32,23 @@ const Contact = () => {
 	// 	}
 	// };
 
-	const sendMessage = () => {
+	const sendMessage = (e) => {
+		e.preventDefault();
 		setSend(true);
-	}
+		setName('');
+		setEmail('');
+		setMessage('');
+	};
 
 	return (
 		<>
 			<S.Container id='contact'>
 				<S.Title>let's talk</S.Title>
-				<S.FormElement action='mail.php' method='POST' onSubmit={() => sendMessage()}>
+				<S.FormElement
+					action='mail.php'
+					method='POST'
+					onSubmit={(e) => sendMessage(e)}
+				>
 					{send && (
 						<S.MessageStatus send={send}>" message send " </S.MessageStatus>
 					)}

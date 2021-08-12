@@ -1,35 +1,48 @@
 export const links = {
 	git: 'https://github.com/Bosik-R',
 	linkedin: 'https://www.linkedin.com/in/tomasz-rosik-3b55381bb',
+	resume:
+		'https://drive.google.com/file/d/12PDAr8ZXY2h78TAYMRZiMAYCe3GqPLvQ/view?usp=sharing',
 };
 
 export const aboutMe = {
-	myStory: 
-		[
-			`I'm a Bootcamp went through, self-learned Web Developer. `,
-			`I always liked building and creating things, that's why coding gives me so much joy. So I decided to make it my all-day work and do something that I'm passionate about. `,	
-		],
-		myGool: 
-		[
-			`For a start, I completed a Web Developer Bootcamp at KODILLA. `, 
-			`Apart from it I'm constantly improving my skills and learn new ones. I'm motivated and focused on reaching my goal and work as a full-time developer. `,
-		],
+	myStory: [
+		`I always liked building and creating things, that's why coding gives me so much joy. `,
+		`I decided to make it my all-day work and do for living something that I'm passionate about. `,
+	],
+	myGool: [
+		`For a start, I completed a Web Developer Bootcamp. `,
+		`Apart from it I'm constantly improving my skills and learning new ones. I'm truly motivated and focused on reaching my goal to work as a full-time developer. `,
+	],
 };
 
 export const projects = [
 	{
+		title: 'Digit Span',
+		invert: true,
+		tech: ['react', 'styled-components'],
+		description: [
+			`This is my latest project, a react and styled-components based app to test your memory. `,
+			`It is a clone of a Cambrige Memory test.`,
+			`In the project, insted of using Redux I decided to use a react state management hook: 'useReducer'. It is much more time-saving than Redux`,
+			``,
+		],
+		images: [
+			'/images/memory_test1.png',
+			'/images/memory_test2.png',
+			'/images/memory_test3.png',
+		],
+		live: 'https://digit-span.tomasz-rosik.pl/',
+		git: 'https://github.com/Bosik-R/memory-test',
+	},
+	{
 		title: 'Portfolio',
 		invert: false,
-		tech: [
-			'react',
-			'styled-components',
-			'react-scroll',
-			'pure-react-carousel',
-		],
+		tech: ['react', 'styled-components', 'react-scroll', 'pure-react-carousel'],
 		description: [
-			`This is my latest project, a react app using styled-components. `,
+			`My first react project that I created using styled-components. `,
 			`I based it on function components. The styled elements are gathered in a separate File for each component and then imported. This gives a cleaner and more organized code. `,
-			`React scroll provides smooth scroll and react pure carousel a sleek image sliding. The contact form is linked through PHP with my email account. `,
+			`React scroll provides smooth scroll and react pure carousel gives images a sleek sliding. The contact form is linked through PHP with my email account. `,
 			`I used styled-components for the first time and I really liked that library. It's great how you can change styles through props and states.`,
 		],
 		images: ['/images/portfolio1.jpg', '/images/portfolio2.jpg'],
@@ -71,7 +84,7 @@ export const projects = [
 		tech: ['react', 'router', 'redux', 'react-spring'],
 
 		description: [
-			`On my Bootcamp course, I took part in a developer work simulation that lasted 3 weeks. My group was put in the middle of project development. `, 
+			`On my Bootcamp course, I took part in a developer work simulation that lasted 3 weeks. My group was put in the middle of project development. `,
 			`We were managing the work through Jira where we assigned tasks for ourselves. We had to write daily reports about our progress. We also had weekly online meetings. `,
 			`I was responsible for adding new functionalities like state changes in the product data depending on the user choices. I added the whole Gallery components with styling and functionalities. `,
 		],
@@ -86,10 +99,10 @@ export const projects = [
 	{
 		title: 'To Do List',
 		invert: true,
-		tech: ['react', 'router', 'redux', ],
+		tech: ['react', 'router', 'redux'],
 
 		description: [
-			`This was my introduction to React and the moment I fall in love to React. A simple To-Do List using the redux store to get and handle data, and react-router to navigate between views. `,
+			`This was my introduction to React and it was the moment I fell in love with React. I made a simple To-Do List using the redux store to get and handle data and react-router to navigate between views. `,
 		],
 		images: [
 			'/images/react-first-step1.jpg',
@@ -102,10 +115,10 @@ export const projects = [
 	{
 		title: 'Guseppe Pizza',
 		invert: false,
-		tech: ['HTML', 'javascript', 'OOP', 'SASS', 'AJAX', ],
+		tech: ['HTML', 'javascript', 'OOP', 'SASS', 'AJAX'],
 
 		description: [
-			`Pizza ordering and table booking page. A project developed during the Bootcamp. This was the introduction to OOP (classes and instances) and AJAX. `,
+			`Pizza ordering and table booking page. A project which was developed during the Bootcamp. This was the introduction to OOP (classes and instances) and AJAX. `,
 			`The main focus was to learn the javascript OOP approach and build an ordering and booking page that sends data to a server. `,
 		],
 		images: [
@@ -120,10 +133,10 @@ export const projects = [
 	{
 		title: 'Landing Page',
 		invert: true,
-		tech: ['HTML', 'CSS', 'SASS', ],
+		tech: ['HTML', 'CSS', 'SASS'],
 
 		description: [
-			`Pure HTML, CSS, SASS project made during the Bootcamp. The first one that I made almost alone following only design sheets and few tips given by KODILLA. `,
+			`Pure HTML, CSS, SASS project made during the Bootcamp. The first one that I made almost alone using only design sheets and few tips given by KODILLA. `,
 		],
 		images: [
 			'/images/second-project1.jpg',
@@ -132,11 +145,7 @@ export const projects = [
 		],
 		live: 'http://second-project.tomasz-rosik.eu/',
 	},
-
 ];
-
-
-
 
 export const mySkills = [
 	{

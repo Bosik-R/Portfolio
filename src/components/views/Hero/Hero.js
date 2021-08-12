@@ -1,7 +1,6 @@
 import React from 'react';
 import Video from '../../../videos/video.mp4';
 import { links, aboutMe } from '../../../Data/InitialData';
-import CV from '../../../images/TomaszRosik.pdf';
 import * as S from './Hero.Elements';
 
 const Hero = () => {
@@ -27,7 +26,7 @@ const Hero = () => {
 					<S.Link href={links.linkedin} target='blank'>
 						LinkedIn
 					</S.Link>
-					<S.Link href={CV} target='blank'>
+					<S.Link href={links.resume} target='blank'>
 						Resume
 					</S.Link>
 				</S.BtnWrapper>
