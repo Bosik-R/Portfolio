@@ -1,8 +1,7 @@
 export const links = {
 	git: 'https://github.com/Bosik-R',
 	linkedin: 'https://www.linkedin.com/in/tomasz-rosik-3b55381bb',
-	resume:
-		'https://drive.google.com/file/d/12PDAr8ZXY2h78TAYMRZiMAYCe3GqPLvQ/view?usp=sharing',
+	resume: 'https://drive.google.com/file/d/12PDAr8ZXY2h78TAYMRZiMAYCe3GqPLvQ/view?usp=sharing',
 };
 
 export const aboutMe = {
@@ -18,6 +17,27 @@ export const aboutMe = {
 
 export const projects = [
 	{
+		title: 'Posts Typescript',
+		invert: false,
+		tech: ['react', 'styled-components', 'restAPI', 'typescript', 'react skeleton'],
+		description: [
+			`Using React and Typescript I build an app to fetch Posts data from the JSON Placeholder server. By turning the edit mode on the user can manipulate the posts list and detail. `,
+			`The response from the server is faked but I created a state management through the useContext hook which is updated globally to simulate the real app behavior. `,
+			`React skeleton provides a nice loading animation during the data fetching. `,
+		],
+		images: [
+			'/images/post-api1.jpg',
+			'/images/post-api2.jpg',
+			'/images/post-api3.jpg',
+			'/images/post-api4.jpg',
+			'/images/post-api5.jpg',
+			'/images/post-api6.jpg',
+		],
+		live: 'https://post-api.tomasz-rosik.pl/',
+		git: 'https://github.com/Bosik-R/typescript-post-api',
+	},
+
+	{
 		title: 'Digit Span',
 		invert: true,
 		tech: ['react', 'styled-components'],
@@ -25,13 +45,8 @@ export const projects = [
 			`This is my latest project, a react and styled-components based app to test your memory. `,
 			`It is a clone of a Cambrige Memory test.`,
 			`In the project, insted of using Redux I decided to use a react state management hook: 'useReducer'. It is much more time-saving than Redux`,
-			``,
 		],
-		images: [
-			'/images/memory_test1.png',
-			'/images/memory_test2.png',
-			'/images/memory_test3.png',
-		],
+		images: ['/images/memory_test1.png', '/images/memory_test2.png', '/images/memory_test3.png'],
 		live: 'https://digit-span.tomasz-rosik.pl/',
 		git: 'https://github.com/Bosik-R/memory-test',
 	},
@@ -158,7 +173,7 @@ export const mySkills = [
 			'/images/skills/sass.png',
 			'/images/skills/es6.png',
 			'/images/skills/bootstrap.png',
-			'/images/skills/handlebars.png',
+			'/images/skills/typescript.png',
 			'/images/skills/react.png',
 			'/images/skills/react redux.png',
 			'/images/skills/axios.png',
