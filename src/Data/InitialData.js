@@ -21,9 +21,9 @@ export const projects = [
 		invert: true,
 		tech: ['react', 'next.js', 'typescript', 'styled-components', 'mongoDB'],
 		description: [
-			`This is my first Next.js and Typescript app. It is exciting to learn a new approche to react. `,
-			`The data used in this project is inspired by an browser extenction 'daily.dev' that I love and recommend.The data is fetched from mongoDB cloud and used in the app through useContext hook. `,
-			`With next.js file structure the home and details page with all possible paths are prerendered on the server. `,
+			`This is my first Next.js and Typescript app. It is exciting to learn a new approach to react. `,
+			`The data used in this project is inspired by a browser extension 'daily.dev' that I love and recommend. The data is fetched from MongoDB cloud and used in the app through useContext hook. `,
+			`With the next.js file structure the home and details page with all possible paths are pre-rendered on the server. `,
 		],
 		images: ['/images/next-ts-sc1.jpg', '/images/next-ts-sc2.jpg', '/images/next-ts-sc3.jpg', '/images/next-ts-sc4.jpg'],
 		live: 'https://next-ts-xi.vercel.app/',
