@@ -3,7 +3,7 @@
 $name = $_POST['name'];
 $email= $_POST['email'];
 $message= $_POST['message'];
-$to = "contact@tomasz-rosik.eu";
+$to = "tomasz.rosik82@gmail.com";
 $subject = "Mail From Portfolio";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
 $headers = "From: noreply@tomasz-rosik.eu" . "\r\n" .
